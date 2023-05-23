@@ -51,3 +51,26 @@ section{
   justify-content: center;
   align-items: center;
 }
+.LandingText h1 {
+  color: white;
+  font-size: XXX-large;
+}
+.LandingText p{
+  color: white; 
+  text-align: center  ;
+  width: 70%;
+  margin-top: 30px;
+}
+::-webkit-scrollbar{
+  background-color: rgba(240, 248, 255, 0);
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-track{
+  width: 20px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 30%;
+  background-color: aqua;
+}
