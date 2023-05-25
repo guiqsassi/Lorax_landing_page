@@ -45,12 +45,13 @@ nav{
     width: 10%;
 }
 .mainNavegation a{
-    color: white;
+    color: rgb(206, 206, 206);;
     font-size: large;
     cursor: pointer;
     position: relative;
     font-family: system-ui;
     padding: 0 10px;
+    
     
 }
 ul{
@@ -71,6 +72,10 @@ li{
     position: relative;
     display: flex;
 }
+.mainNavegation a:hover{
+    color: white;
+    transition: 0.3s;
+}
 .mainNavegation a::after{
     position: absolute;
     bottom: 0;
@@ -79,11 +84,14 @@ li{
     content: "";
     width: 0%;
     height: 0px;
+    color: white;
     background-color: rgb(255,163,45);
     transition: 0.3s;
 }
 .mainNavegation a:hover::after{
     width: 100%;
+    color: white;
+
 }
 .socialMediaNavegation{
     height: 100%;
@@ -94,7 +102,7 @@ li{
     margin-left: 15%;
 }
 .socialIcon{
-    color: white;
+    color: rgb(206, 206, 206);
     cursor: pointer;
     margin-left: 50px;
 }
