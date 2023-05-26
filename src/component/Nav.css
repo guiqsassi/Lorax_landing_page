@@ -180,7 +180,7 @@ li{
 
 
     }
-    a{
+    .mainNavegation a{
         width: 100%;
         height: 100%;
         justify-content: center;
@@ -196,9 +196,10 @@ li{
         left: 0;
         margin: 5%;
     }
- 
+    .Container.disabled {
+       transform: translateY(0vh);
+       height: 0%;
+      }
+      
   
 }
-#checkBox:checked ~ nav{
-    display: none;
-  }

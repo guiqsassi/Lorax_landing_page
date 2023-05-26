@@ -1,25 +1,24 @@
 import './Nav.css';
 import Logo from "../images/kisspng-the-lorax-once-ler-youtube-clip-art-dr-seuss-5ac9bfec3bdba8.9696196215231713082452.png"
 import {FaFacebookSquare, FaInstagram, FaTiktok, FaGithub} from "react-icons/fa";
-import { FiMenu } from "react-icons/fi";
 import { useState } from 'react';
+import {FIMenu, FiMenu} from "react-icons/fi"
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 function Nav(){
     
-    const [flex, setFlex] = useState('flex')
-    const [nav, setNav] = useState(true)
-    let [checked, setChecked] = useState(false)
-
-    
-    function check () {
-            
-
-            console.log(checked)
-
-    }
+    const [flex, setFlex] = useState('flex');
+    const [nav, setNav] = useState(true);
+    const [checked, setChecked] = useState(false);
+  
+    const handleCheckboxChange = () => {
+      setChecked(!checked);
+      setFlex(checked ? 'flex' : 'none');
+    };
+  
 
     return(
-    <div className="Container">
+    <div className={checked ? 'Container disabled' : 'Container'}>
         
     <nav  style={{display: flex, transition: '0.3s'}}>
         <div className="mainNavegation"> 
@@ -44,7 +43,19 @@ function Nav(){
             
         </div>
     </nav>
-    <input type='checkbox' size={25} id='checkBox'  className='Hamburguer'/>
+    <FiMenu
+        size={25}
+        type="checkbox"
+        id="checkBox"
+        className="Hamburguer"
+        checked={checked}
+        onClick={handleCheckboxChange}
+        // style={{opacity: 0}}
+        />
+      
+
+			
+            
     </div>
     );
 
