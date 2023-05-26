@@ -1,5 +1,4 @@
 import '../src/cssFiles/App.css';
-import '../src/cssFiles/About.css';
 import Lorax from "./images/Lorax.png";
 import Nav from './component/Nav';
 import Logo from "./images/NicePng_lorax-png_581113.png"
@@ -23,8 +22,8 @@ function App() {
                 </p>
                 </div>
                 <div className="buttons">
-                    <button className="Trailer">Watch Trailer</button>
-                    <button className="Watch">Watch full</button>
+                    <div className="Trailer"> <a> Trailer</a> </div>
+                    <div className="Watch"> <a> Watch full movie</a></div>
                 </div>
             </div>
             <div className='LoraxImage'>

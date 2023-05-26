@@ -42,6 +42,7 @@ nav{
     margin-left: 10%;
 }
 .LogoNav{
+    display: flex;
     width: 10%;
 }
 .mainNavegation a{
@@ -86,7 +87,6 @@ li{
     height: 0px;
     color: white;
     background-color: rgb(255,163,45);
-    transition: 0.3s;
 }
 .mainNavegation a:hover::after{
     width: 100%;
@@ -104,9 +104,101 @@ li{
 .socialIcon{
     color: rgb(206, 206, 206);
     cursor: pointer;
+    display: flex;
     margin-left: 50px;
 }
 .socialIcon:hover{
     color: rgb(255,163,45);
     
 }
+.Hamburguer{
+    display: none;
+    position: absolute;
+    right: 100px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+.Hamburguer:checked{
+    color: orange;
+}
+@media (max-width: 858px) {
+    .Hamburguer{
+        display: flex;
+        top: 0;
+        right: 0;
+        margin: 5%;
+    }
+    .mainNavegation{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        
+
+    }
+    .socialIcon{
+        margin: 0;
+        
+    }
+    nav{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.842);
+        transition: 2s;
+
+    }
+    .Container{
+        height: 100%;
+        transform: translateY(0vh);
+    }
+    
+    .socialMediaNavegation{
+        height: 20%;
+        bottom: 0;
+        margin: 0;
+        gap: 30px;
+    }
+    ul{
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        height: 70%;
+        overflow-y: auto;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+        
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+
+    }
+    a{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        margin-top: 30px;
+        
+    }
+    .LogoNav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 5%;
+    }
+ 
+  
+}
+#checkBox:checked ~ nav{
+    display: none;
+  }

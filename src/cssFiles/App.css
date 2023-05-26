@@ -52,7 +52,7 @@ section{
   isolation: isolate;
 }
 .LoraxImage{
-  width: 40%;
+  width: 50%;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
@@ -60,12 +60,11 @@ section{
   isolation: isolate;
 }
 .LoraxPng{
-  width: 70%;
+  width: 60%;
   margin-top: 20%;
   margin-right: 20%;
 }
 .Logo{
-  
   width: 30%;
 }
 .buttons{
@@ -84,23 +83,33 @@ section{
   background-color: rgb(255,163,45);
   border-color: rgba(240, 248, 255, 0);
   color: white;
-  font-size: large;
   cursor: pointer;
-  font-family: system-ui;
-  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 10%;
+  transform: skew(-30deg);
+}
+.Trailer a, .Watch a{
+  transform: skew(30deg);
+  font-size: large;
+  font-family: system-ui;
 }
 .Watch{
   width: 30%;
   height: 60%;
   background-color: rgba(255, 255, 255, 0);
-  border-color: rgb(208,175,255);
-  color: rgb(255, 255, 255);
-  font-size: large;
+  border: solid 1px rgb(208,175,255);;
+  color: white;
   cursor: pointer;
-  font-family: system-ui;
-  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  transform: skew(-30deg);
+
 }
+
 .Description{
   isolation: isolate;
 
@@ -126,7 +135,7 @@ section{
 .Left p{
   color: white; 
   font-family: system-ui;
-  width: 50%;
+  width: 80%;
   margin-top: 40px;
   font-size: larger;
   text-align:justify;
@@ -148,4 +157,17 @@ section{
   width: 100%;
   display: flex;
   margin-left: 50%;
+}
+@media (max-width: 858px) {
+  .LoraxImage{
+    display: none;
+  }
+  .Left{
+    width: 100%;
+  }
+  .logoDiv{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
