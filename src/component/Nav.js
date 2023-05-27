@@ -50,7 +50,6 @@ function Nav(){
         className="Hamburguer"
         checked={checked}
         onClick={handleCheckboxChange}
-        // style={{opacity: 0}}
         />
       
 

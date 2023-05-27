@@ -75,6 +75,8 @@ section{
   flex-direction: row;
   justify-content: center;
   isolation: isolate;
+  animation: fade-up 1s ;
+
 
 }
 .Trailer{
@@ -107,7 +109,6 @@ section{
   align-items: center;
   margin-right: 10%;
   transform: skew(-30deg);
-
 }
 
 .Description{
@@ -127,6 +128,8 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fade-up 0.3s ;
+
 }
 .Left h1 {
   color: white;
@@ -170,4 +173,17 @@ section{
     justify-content: center;
     align-items: center;
   }
+}
+@keyframes fade-up {
+  0%{
+    transform: skew(-30deg);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100%{
+    transform: skew(-30deg);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
 }

@@ -87,6 +87,7 @@ li{
     height: 0px;
     color: white;
     background-color: rgb(255,163,45);
+    transition: 0.3s;
 }
 .mainNavegation a:hover::after{
     width: 100%;
