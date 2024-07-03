@@ -47,7 +47,7 @@ _Para instalar este projeto você precisa:_
 
 1. Clonar o repositório
    ```sh
-   git clone https://guiqsassi/Calculator.git
+   git clone https://github.com/guiqsassi/Lorax_landing_page.git
    ```
 2. Instalar os pacotes
    ```sh
